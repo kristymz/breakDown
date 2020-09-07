@@ -10,7 +10,6 @@
 		A400A24D2505EAE3009BF9EE /* JohnsonEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400A24C2505EAE3009BF9EE /* JohnsonEndViewController.swift */; };
 		A400A2532505F21B009BF9EE /* PLEASEWORKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400A2522505F21B009BF9EE /* PLEASEWORKViewController.swift */; };
 		A400A2552505F43A009BF9EE /* JohnsonSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400A2542505F439009BF9EE /* JohnsonSchoolViewController.swift */; };
-		A400A25725060090009BF9EE /* DELETE THIS PLEASE in Resources */ = {isa = PBXBuildFile; fileRef = A400A25625060090009BF9EE /* DELETE THIS PLEASE */; };
 		A41DD2DA2505522C00876023 /* JohnsonBeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41DD2D92505522C00876023 /* JohnsonBeginViewController.swift */; };
 		A41DD2E12505573600876023 /* SilomBol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A41DD2E02505573600876023 /* SilomBol.ttf */; };
 		A41DD2E22505573600876023 /* SilomBol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A41DD2E02505573600876023 /* SilomBol.ttf */; };
@@ -68,7 +67,6 @@
 		A400A24C2505EAE3009BF9EE /* JohnsonEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnsonEndViewController.swift; sourceTree = "<group>"; };
 		A400A2522505F21B009BF9EE /* PLEASEWORKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLEASEWORKViewController.swift; sourceTree = "<group>"; };
 		A400A2542505F439009BF9EE /* JohnsonSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JohnsonSchoolViewController.swift; sourceTree = "<group>"; };
-		A400A25625060090009BF9EE /* DELETE THIS PLEASE */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DELETE THIS PLEASE"; path = "../../../../AppIcons (1) 2/DELETE THIS PLEASE"; sourceTree = "<group>"; };
 		A41DD2D92505522C00876023 /* JohnsonBeginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnsonBeginViewController.swift; sourceTree = "<group>"; };
 		A41DD2E02505573600876023 /* SilomBol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SilomBol.ttf; sourceTree = "<group>"; };
 		A41DD2E42505573B00876023 /* ice_pixel-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ice_pixel-7.ttf"; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				A4ED1968250432C60052AD29 /* StorySlide1ViewController.swift */,
 				A48E9D2925042AFE00C73AA2 /* UIView+Extension.swift */,
 				A4B01E7F2504274300B9B2EA /* Assets.xcassets */,
-				A400A25625060090009BF9EE /* DELETE THIS PLEASE */,
 				A4B01E812504274300B9B2EA /* LaunchScreen.storyboard */,
 				A4B01E842504274300B9B2EA /* Info.plist */,
 				A4B01E7C2504274200B9B2EA /* BREAKDOWN.xcdatamodeld */,
@@ -326,7 +323,6 @@
 				A41DD2E12505573600876023 /* SilomBol.ttf in Resources */,
 				A4B01E832504274300B9B2EA /* LaunchScreen.storyboard in Resources */,
 				A4B01E802504274300B9B2EA /* Assets.xcassets in Resources */,
-				A400A25725060090009BF9EE /* DELETE THIS PLEASE in Resources */,
 				A41DD2E52505573C00876023 /* ice_pixel-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
