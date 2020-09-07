@@ -1,27 +1,29 @@
 //
-//  JohnsonIntroViewController.swift
+//  JohnsonDInnerViewController.swift
 //  BREAKDOWN
 //
-//  Created by kristy awesome pants martinez on 9/5/20.
+//  Created by kristy awesome pants martinez on 9/6/20.
 //  Copyright © 2020 kristy martinez. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class JohnsonIntroViewController: UIViewController {
+class JohnsonDInnerViewController: UIViewController {
 
     @IBOutlet weak var textLbl: UILabel!
-    var str = "You are Jeremy. You're a 16 year old living in New York. You have two other siblings, a 10 year old brother and an 18 year old sister. You recently have begun feeling weird, not yourself. Please press NEXT to continue."
+    
+    var str = "You are now at the dinner table. Same old situation; siblings quiet, parents arguing, tension high. Your mom brings out your dinner: steak with mixed vegetables. As you look down on your plate, you realize you are not hungry. This seems unusual to you as you always finish your dinner plate, but you don't think much of it as you still feel overwhelmingly tired. You go to tell your mom that you are not hungry, but see that her mood is the same as ever. What will you do?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let gesture = UITapGestureRecognizer(target: self, action: #selector(onClickView))
         self.view.addGestureRecognizer(gesture)
         
-        view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
+         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
         // Do any additional setup after loading the view.
     }
+   @IBAction func unwindToTen(_ sender: UIStoryboardSegue){}
     @objc
     func onClickView(){
         
@@ -30,8 +32,7 @@ class JohnsonIntroViewController: UIViewController {
             textLbl.text! += "\(i)"
             RunLoop.current.run(until: Date()+0.05)
         }
-    }
- @IBAction func unwindToFour(_ sender: UIStoryboardSegue){}
+
     /*
     // MARK: - Navigation
 
@@ -42,4 +43,5 @@ class JohnsonIntroViewController: UIViewController {
     }
     */
 
+}
 }

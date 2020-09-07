@@ -1,18 +1,19 @@
 //
-//  JohnsonIntroViewController.swift
+//  JohnsonTiredViewController.swift
 //  BREAKDOWN
 //
-//  Created by kristy awesome pants martinez on 9/5/20.
+//  Created by kristy awesome pants martinez on 9/6/20.
 //  Copyright © 2020 kristy martinez. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class JohnsonIntroViewController: UIViewController {
+class JohnsonTiredViewController: UIViewController {
 
     @IBOutlet weak var textLbl: UILabel!
-    var str = "You are Jeremy. You're a 16 year old living in New York. You have two other siblings, a 10 year old brother and an 18 year old sister. You recently have begun feeling weird, not yourself. Please press NEXT to continue."
+    
+    var str = "You are now in your room. As you put your bag down, you feel overwhelmingly tired. You usually never feel tired after school and always do your homework as soon as you get home. You do not have any motivation for anything and want to sleep, but you know if you do, your parents will get mad. What will you do?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class JohnsonIntroViewController: UIViewController {
         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
         // Do any additional setup after loading the view.
     }
+     @IBAction func unwindToNine(_ sender: UIStoryboardSegue){}
     @objc
     func onClickView(){
         
@@ -29,9 +31,7 @@ class JohnsonIntroViewController: UIViewController {
             AudioServicesPlaySystemSound(1306)
             textLbl.text! += "\(i)"
             RunLoop.current.run(until: Date()+0.05)
-        }
-    }
- @IBAction func unwindToFour(_ sender: UIStoryboardSegue){}
+
     /*
     // MARK: - Navigation
 
@@ -42,4 +42,6 @@ class JohnsonIntroViewController: UIViewController {
     }
     */
 
+}
+}
 }

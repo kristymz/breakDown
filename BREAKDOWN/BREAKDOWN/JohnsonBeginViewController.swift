@@ -1,37 +1,42 @@
 //
-//  JohnsonIntroViewController.swift
+//  JohnsonBeginViewController.swift
 //  BREAKDOWN
 //
-//  Created by kristy awesome pants martinez on 9/5/20.
+//  Created by kristy awesome pants martinez on 9/6/20.
 //  Copyright © 2020 kristy martinez. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class JohnsonIntroViewController: UIViewController {
+class JohnsonBeginViewController: UIViewController {
 
     @IBOutlet weak var textLbl: UILabel!
-    var str = "You are Jeremy. You're a 16 year old living in New York. You have two other siblings, a 10 year old brother and an 18 year old sister. You recently have begun feeling weird, not yourself. Please press NEXT to continue."
     
+    var str = "A new day is here and you have just woken up. As you look around your room, you suddenly feel very empty and anxious. Before you could do anything about it, your mom was yelling for you to hurry up and get ready for school. With these confusing emotions, you go downstairs."
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(onClickView))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(OnClickView))
         self.view.addGestureRecognizer(gesture)
         
-        view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
-        // Do any additional setup after loading the view.
+         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
     }
+    @IBAction func unwindToFive(_ sender: UIStoryboardSegue){}
     @objc
-    func onClickView(){
+    func OnClickView(){
         
         for i in str {
             AudioServicesPlaySystemSound(1306)
             textLbl.text! += "\(i)"
             RunLoop.current.run(until: Date()+0.05)
         }
+        
+        }
+        // Do any additional setup after loading the view.
     }
- @IBAction func unwindToFour(_ sender: UIStoryboardSegue){}
+
+    
+
     /*
     // MARK: - Navigation
 
@@ -42,4 +47,3 @@ class JohnsonIntroViewController: UIViewController {
     }
     */
 
-}

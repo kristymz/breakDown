@@ -9,17 +9,23 @@
 import UIKit
 
 class JohnsonNameViewController: UIViewController {
-
-    @IBOutlet weak var name: UITextField!
    
+    @IBOutlet weak var nameInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
+        
+     
+    
+          view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
         // Do any additional setup after loading the view.
     }
-    @IBAction func enterName(_ sender: Any) {
-    }
+  
+ @IBAction func unwindToThree(_ sender: UIStoryboardSegue){}
+}
+
+
+
     
 
     /*
@@ -32,4 +38,4 @@ class JohnsonNameViewController: UIViewController {
     }
     */
 
-}
+

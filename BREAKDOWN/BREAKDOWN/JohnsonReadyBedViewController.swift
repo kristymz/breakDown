@@ -1,18 +1,19 @@
 //
-//  JohnsonIntroViewController.swift
+//  JohnsonReadyBedViewController.swift
 //  BREAKDOWN
 //
-//  Created by kristy awesome pants martinez on 9/5/20.
+//  Created by kristy awesome pants martinez on 9/6/20.
 //  Copyright © 2020 kristy martinez. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class JohnsonIntroViewController: UIViewController {
+class JohnsonReadyBedViewController: UIViewController {
 
     @IBOutlet weak var textLbl: UILabel!
-    var str = "You are Jeremy. You're a 16 year old living in New York. You have two other siblings, a 10 year old brother and an 18 year old sister. You recently have begun feeling weird, not yourself. Please press NEXT to continue."
+    
+    var str = "You are in the bathroom now. As you are cleaning up, you look at yourself in the mirror. You feel weak, small, worthless. You don't know what to do. You hear your mom going to her room too, you feel as if she's calmed down now. What do you do?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class JohnsonIntroViewController: UIViewController {
         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
         // Do any additional setup after loading the view.
     }
+     @IBAction func unwindToEleven(_ sender: UIStoryboardSegue){}
     @objc
     func onClickView(){
         
@@ -29,9 +31,7 @@ class JohnsonIntroViewController: UIViewController {
             AudioServicesPlaySystemSound(1306)
             textLbl.text! += "\(i)"
             RunLoop.current.run(until: Date()+0.05)
-        }
-    }
- @IBAction func unwindToFour(_ sender: UIStoryboardSegue){}
+
     /*
     // MARK: - Navigation
 
@@ -42,4 +42,6 @@ class JohnsonIntroViewController: UIViewController {
     }
     */
 
+}
+}
 }

@@ -1,19 +1,18 @@
 //
-//  JohnsonIntroViewController.swift
+//  KitchenJohnsonViewController.swift
 //  BREAKDOWN
 //
-//  Created by kristy awesome pants martinez on 9/5/20.
+//  Created by kristy awesome pants martinez on 9/6/20.
 //  Copyright © 2020 kristy martinez. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
-
-class JohnsonIntroViewController: UIViewController {
+class KitchenJohnsonViewController: UIViewController {
 
     @IBOutlet weak var textLbl: UILabel!
-    var str = "You are Jeremy. You're a 16 year old living in New York. You have two other siblings, a 10 year old brother and an 18 year old sister. You recently have begun feeling weird, not yourself. Please press NEXT to continue."
     
+    var str = "You are now in the kitchen. It is a usual day in your household; Mom and Dad arguing, your siblings staying quiet, tension is everywhere. As your siblings are getting up to go to school, that empty feeling hits you again, this time even harder. You do not feel well enough to go to school. What do you do?"
     override func viewDidLoad() {
         super.viewDidLoad()
         let gesture = UITapGestureRecognizer(target: self, action: #selector(onClickView))
@@ -31,7 +30,7 @@ class JohnsonIntroViewController: UIViewController {
             RunLoop.current.run(until: Date()+0.05)
         }
     }
- @IBAction func unwindToFour(_ sender: UIStoryboardSegue){}
+@IBAction func unwindToSix(_ sender: UIStoryboardSegue){}
     /*
     // MARK: - Navigation
 

@@ -16,7 +16,8 @@ class StorySlide1ViewController: UIViewController {
         view.setGradientBackground(colorOne: Colors.blue, colorTwo: Colors.black)
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func unwindToTwo(_ sender: UIStoryboardSegue){}
+    }
 
     /*
     // MARK: - Navigation
@@ -28,4 +29,4 @@ class StorySlide1ViewController: UIViewController {
     }
     */
 
-}
+
